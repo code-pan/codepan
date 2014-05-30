@@ -1,5 +1,7 @@
 colors = OrangeRed SeaGreen Tomato DarkOliveGreen Crimson
-images = '../images/made-in.jpg' '../images/EpBHfTrtRLa2PCPwuXkQ_thessaloniki_port.jpg' '../images/in-out.jpg' '../images/level.jpg' '../images/OwfYyiJXQ6qddLgTOBGX_Ariana Prestes photos (4).jpg'
+images = 'made-in.jpg' 'OwfYyiJXQ6qddLgTOBGX_Ariana Prestes photos (4).jpg' 'in-out.jpg' 'level.jpg' 'EpBHfTrtRLa2PCPwuXkQ_thessaloniki_port.jpg'
+positions_top = '' 90px 10px 100px 200px
+positions_left = '' 190px 10px 100px 20px
 
 *
   font-family Droid Sans
@@ -17,6 +19,7 @@ div.container
   margin-left auto
   margin-right auto
   width 80%
+  max-width 670px
 
 h1
   font-size 3.2em
@@ -26,45 +29,40 @@ h1
   background-color White
   border-radius 6px
 
-h2
+header
+  background-image url(images[0])
+  background-repeat no-repeat
+  background-position center center
+  background-size 100%
+  height 450px
+  border-bottom 10px solid colors[0]
+
+.section h2
   font-size 3em
   padding 4px 18px
   box-shadow 10px 10px 0
   background-color White
   border-radius 6px
+  position: relative
 
-div.section
+.section
   height 350px
   background-repeat no-repeat
   background-position center center
   background-size 100%
   border-style solid
-  border-width 6px 0 6px 0
+  border-width 10px 0 10px 0
 
-div.section_1
-  background-image url(images[1])
-  border-color colors[1]
-h2#section_1
-  color colors[1]
-  box-shadow 10px 10px 0 colors[1]
+.content
+  padding-top 50px
+  padding-bottom 140px
 
-div.section_2
-  background-image url(images[2])
-  border-color colors[2]
-h2#section_2
-  color colors[2]
-  box-shadow 10px 10px 0 colors[2]
-
-div.section_3
-  background-image url(images[3])
-  border-color colors[3]
-h2#section_3
-  color colors[3]
-  box-shadow 10px 10px 0 colors[3]
-
-div.section_4
-  background-image url(images[4])
-  border-color colors[4]
-h2#section_4
-  color colors[4]
-  box-shadow 10px 10px 0 colors[4]
+for num in (1..4)
+  div.section_{num}
+    background-image: url(images[num])
+    border-color: colors[num]
+  h2#section_{num}
+    color: colors[num]
+    box-shadow: 10px 10px 0 colors[num]
+    top: positions_top[num]
+    left: positions_left[num]

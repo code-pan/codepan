@@ -5,6 +5,7 @@ markdown    = require 'metalsmith-markdown'
 stylus      = require 'metalsmith-stylus'
 watch       = require 'metalsmith-watch'
 collections = require 'metalsmith-collections'
+assets      = require 'metalsmith-assets'
 
 Metalsmith __dirname
   .use watch pattern: '**/*'
@@ -18,5 +19,6 @@ Metalsmith __dirname
   .use markdown()
   .use templates engine: 'jade', pattern: '*.html', default: 'layout.jade'
   .use stylus()
+  .use assets source: './images'
   .build (err, files) ->
     console.log err if err
