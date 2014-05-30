@@ -1,4 +1,4 @@
-doctype
+doctype html
 head
   link(href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Cousine',rel='stylesheet',type='text/css')
   link(href='style.css',rel='stylesheet',type='text/css')
@@ -6,6 +6,14 @@ body
   header
     h1= title
   article
-    div.content!= contents
+    .content!= contents
+    each section in sections
+      div(class="section_#{section.sort} section")
+        //-a(href="##{section.title}") #
+        h2(id="section_#{section.sort}")= section.title
+      div.content!= section.contents
   footer
-    p= 'teh footer content'
+    ul
+    each footer in footers
+      li
+        a(href= footer.path)= footer.title
