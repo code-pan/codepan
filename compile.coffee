@@ -7,7 +7,7 @@ watch       = require 'metalsmith-watch'
 collections = require 'metalsmith-collections'
 
 Metalsmith __dirname
-  .use watch()
+  .use watch pattern: '**/*'
   .use (files, metalsmith, done) ->
     v.path = f.replace /\.[a-z]+$/g, '' for f, v of files
     do done
