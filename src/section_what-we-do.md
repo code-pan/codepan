@@ -1,6 +1,6 @@
 ---
 title: What we do
-sort: 0
+sort: 1
 ---
 
 We work hard.

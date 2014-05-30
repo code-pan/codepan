@@ -4,14 +4,18 @@ head
   link(href='style.css',rel='stylesheet',type='text/css')
 body
   header
-    h1= title
+    .container
+      h1= title
   article
-    .content!= contents
+    .content
+      .container!= contents
     each section in sections
       div(class="section_#{section.sort} section")
-        //-a(href="##{section.title}") #
-        h2(id="section_#{section.sort}")= section.title
-      div.content!= section.contents
+        .container
+          //-a(href="##{section.title}") #
+          h2(id="section_#{section.sort}")= section.title
+      div.content
+        .container!= section.contents
   footer
     ul
     each footer in footers

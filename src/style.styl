@@ -1,17 +1,19 @@
-color2 = DarkOliveGreen
+colors = OrangeRed SeaGreen Tomato DarkOliveGreen Crimson
+images = '../images/made-in.jpg' '../images/EpBHfTrtRLa2PCPwuXkQ_thessaloniki_port.jpg' '../images/in-out.jpg' '../images/level.jpg' '../images/OwfYyiJXQ6qddLgTOBGX_Ariana Prestes photos (4).jpg'
 
 *
   font-family Droid Sans
 
 body
   background-color DarkSlateGray
+  padding 0
+  margin 0
 
 h1, h2, h3
   font-family Cousine
   display inline-block
 
-div.section
-div.content
+div.container
   margin-left auto
   margin-right auto
   width 80%
@@ -19,34 +21,50 @@ div.content
 h1
   font-size 3.2em
   padding 6px 20px
-  color OrangeRed
-  box-shadow 10px 10px 0 OrangeRed
+  color colors[0]
+  box-shadow 10px 10px 0 colors[0]
   background-color White
   border-radius 6px
 
 h2
   font-size 3em
   padding 4px 18px
-  color OrangeRed
   box-shadow 10px 10px 0
   background-color White
   border-radius 6px
 
-div.section_0
-  background-image url('../images/EpBHfTrtRLa2PCPwuXkQ_thessaloniki_port.jpg')
-h2#section_0
-  color SeaGreen
-  box-shadow 10px 10px 0 SeaGreen
+div.section
+  height 350px
+  background-repeat no-repeat
+  background-position center center
+  background-size 100%
+  border-style solid
+  border-width 6px 0 6px 0
 
+div.section_1
+  background-image url(images[1])
+  border-color colors[1]
 h2#section_1
-  color Tomato
-  box-shadow 10px 10px 0 Tomato
+  color colors[1]
+  box-shadow 10px 10px 0 colors[1]
 
+div.section_2
+  background-image url(images[2])
+  border-color colors[2]
 h2#section_2
-  color color2
-  box-shadow 10px 10px 0 color2
+  color colors[2]
+  box-shadow 10px 10px 0 colors[2]
 
-h1#section_3
-  color Crimson
-  box-shadow 10px 10px 0 Crimson
+div.section_3
+  background-image url(images[3])
+  border-color colors[3]
+h2#section_3
+  color colors[3]
+  box-shadow 10px 10px 0 colors[3]
 
+div.section_4
+  background-image url(images[4])
+  border-color colors[4]
+h2#section_4
+  color colors[4]
+  box-shadow 10px 10px 0 colors[4]

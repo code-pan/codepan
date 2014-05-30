@@ -1,6 +1,6 @@
 ---
 title: Who we are
-sort: 2
+sort: 3
 ---
 
 We are an amazing team.

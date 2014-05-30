@@ -1,6 +1,6 @@
 ---
 title: How we work
-sort: 1
+sort: 2
 ---
 
 We use magic and JavaScript.
