@@ -2,6 +2,7 @@ colors = OrangeRed SeaGreen Tomato DarkOliveGreen Crimson
 images = 'made-in.jpg' 'OwfYyiJXQ6qddLgTOBGX_Ariana Prestes photos (4).jpg' 'in-out.jpg' 'level.jpg' 'EpBHfTrtRLa2PCPwuXkQ_thessaloniki_port.jpg'
 positions_top = 300px 90px 10px 100px 200px
 positions_left = 350px 190px 10px 100px 20px
+bg_positions = center center top center top
 lightColor = FloralWhite
 //CornSilk Ivory Seashell Snow
 
@@ -50,23 +51,23 @@ header
   border-radius 6px
   position: relative
 
-.section
-  height 450px
-  background-repeat no-repeat
-  background-position center center
-  background-size 100%
-  border-style solid
-  border-width 6px 0 10px 0
-
 .content
   padding-top 50px
   padding-bottom 140px
   font-size 1.2em
   color lightColor
 
+.section
+  height 450px
+  background-repeat no-repeat
+  background-size cover
+  border-style solid
+  border-width 6px 0 10px 0
+
 for num in (1..4)
   div.section_{num}
     background-image: url(images[num])
+    background-position: bg_positions[num] center
     border-color: colors[num]
   h2#section_{num}
     color: colors[num]
