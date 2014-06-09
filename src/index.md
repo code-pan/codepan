@@ -1,5 +1,5 @@
 ---
-title: Code Pan
+title: '<code-pan>'
 punchline: We cook up your code!
 ---
 
