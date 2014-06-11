@@ -49,7 +49,14 @@ header
   box-shadow 10px 10px 0
   background-color lightColor
   border-radius 6px
-  position: relative
+  position  relative
+
+h3
+    font-size 1.4em
+    background-color lightColor
+    padding 6px 12px
+    margin-bottom 12px
+    margin-top 26px
 
 .content
   padding-top 50px
@@ -74,6 +81,8 @@ for num in (1..4)
     box-shadow: 10px 10px 0 colors[num]
     top: positions_top[num]
     left: positions_left[num]
+  .content_{num} h3
+    color: colors[num]
 
 footer
   border-top 6px solid Fuchsia

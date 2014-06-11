@@ -14,7 +14,7 @@ body
         .container
           //-a(href="##{section.title}") #
           h2(id="section_#{section.sort}")= section.title
-      div.content
+      div(class="content_#{section.sort} content")
         .container!= section.contents
   footer
     ul
