@@ -10,7 +10,6 @@ assets      = require 'metalsmith-assets'
 watchFlag = process.argv[2] is 'watch'
 
 Metalsmith __dirname
-  .use(watch pattern: '**/*' if watchFlag)
   .use (files, metalsmith, done) ->
     v.path = f.replace /\.[a-z]+$/g, '' for f, v of files
     do done
