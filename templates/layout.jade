@@ -18,6 +18,6 @@ body
         .container!= section.contents
   footer
     ul
-    each footer in footers
-      li
-        a(href= footer.path)= footer.title
+      each footer in footers
+        li
+          a(href="#{footer.path}.html")= footer.title

@@ -9,6 +9,9 @@ lightColor = FloralWhite
 *
   font-family 'Droid Sans'
 
+a
+  text-decoration none
+
 body
   background-color DarkSlateGray
   padding 0
@@ -52,13 +55,13 @@ header
   position  relative
 
 h3
-    font-size 1.4em
-    background-color lightColor
-    padding 6px 12px
-    margin-bottom 12px
-    margin-top 26px
+  font-size 1.4em
+  background-color lightColor
+  padding 6px 12px
+  margin-bottom 12px
+  margin-top 26px
 
-.content
+.content, a
   padding-top 50px
   padding-bottom 140px
   font-size 1.2em
@@ -85,16 +88,20 @@ for num in (1..4)
     color: colors[num]
 
 footer
-  border-top 6px solid Fuchsia
+  border-top 4px solid GoldenRod
   height 120px
   text-align center
 
   a
-    color lightColor
-    text-decoration none
+    color GoldenRod
 
   ul
     list-style none
 
+    :first-child
+      border-left none
+
   li
     display inline-block
+    padding 4px 16px
+    border-left 2px solid GoldenRod
