@@ -1,6 +1,12 @@
 ---
 title: Who we are
-sort: 3
+sort: 2
 ---
 
-We are an amazing team.
+### Avi Elran
+
+Worked for ... since ... fluent in ...
+
+### Philipp Strathausen
+
+Worked for ... since ... fluent in ...
