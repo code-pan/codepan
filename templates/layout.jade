@@ -6,13 +6,16 @@ body
   header
     .container
       h1= title
+      .navigation
+        each section in sections
+          a(href="##{section.path}",class="section_#{section.sort}")=section.title
   article
-    .content
+    .content.intro
       .container!= contents
     each section in sections
       div(class="section_#{section.sort} section")
         .container
-          //-a(href="##{section.title}") #
+          a(name="#{section.path}") &nbsp;
           h2(id="section_#{section.sort}")= section.title
       div(class="content_#{section.sort} content")
         .container!= section.contents
