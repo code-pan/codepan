@@ -2,7 +2,7 @@
 title: '<code-pan>'
 ---
 
-Hi there.
+### Hi there.
 
 We're a group of passionate hackers
 that want to help your business turn ideas into reality.
