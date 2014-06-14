@@ -4,7 +4,6 @@ positions_top = 300px 90px 10px 100px 200px
 positions_left = 350px 190px 10px 100px 20px
 bg_positions = center center top center top
 lightColor = FloralWhite
-//CornSilk Ivory Seashell Snow
 
 *
   font-family 'Droid Sans'
@@ -52,7 +51,18 @@ header
   box-shadow 10px 10px 0
   background-color lightColor
   border-radius 6px
-  position  relative
+  position relative
+
+.navigation
+  top 10px
+  position absolute
+
+  a
+    color colors[0]
+    background-color lightColor
+    display inline-block
+    padding 4px 8px
+    margin 12px
 
 h3
   font-size 1.4em
@@ -60,6 +70,9 @@ h3
   padding 6px 12px
   margin-bottom 12px
   margin-top 26px
+
+.intro h3
+    color colors[0]
 
 .content, a
   padding-top 50px
@@ -86,14 +99,17 @@ for num in (1..4)
     left: positions_left[num]
   .content_{num} h3
     color: colors[num]
+  a.section_{num}
+    color: colors[num]
 
 footer
   border-top 4px solid GoldenRod
-  height 40px
+  padding 1em
   text-align center
 
   a
     color GoldenRod
+    font-weight bold
 
   ul
     list-style none
@@ -104,4 +120,4 @@ footer
   li
     display inline-block
     padding 4px 16px
-    border-left 2px solid GoldenRod
+    border-left 4px solid GoldenRod
