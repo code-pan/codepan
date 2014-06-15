@@ -1,4 +1,5 @@
-colors = OrangeRed SeaGreen Tomato DarkOliveGreen Crimson
+//colors = OrangeRed SeaGreen Tomato DarkOliveGreen Crimson
+colors = #FF4500 #2E8B57 #FF6347 #556B2F #ED143D
 images = 'made-in.jpg' 'OwfYyiJXQ6qddLgTOBGX_Ariana Prestes photos (4).jpg' 'in-out.jpg' 'level.jpg' 'EpBHfTrtRLa2PCPwuXkQ_thessaloniki_port.jpg'
 positions_top = 300px 90px 10px 100px 200px
 positions_left = 350px 190px 10px 100px 20px
@@ -74,7 +75,7 @@ h3
 .intro h3
     color colors[0]
 
-.content, a
+.content
   padding-top 50px
   padding-bottom 140px
   font-size 1.2em
@@ -99,6 +100,10 @@ for num in (1..4)
     left: positions_left[num]
   .content_{num} h3
     color: colors[num]
+  .content_{num} a
+    color: saturate(lighten(colors[num], 40%), 50%)
+  .content_{num} a:hover
+      color: saturate(colors[num], 100%)
   a.section_{num}
     color: colors[num]
 
